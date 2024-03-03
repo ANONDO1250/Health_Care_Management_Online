@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OederConfirme"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="উল্লেখিত নাম্বারে ফুল পেমেন্ট অথবা শুধুমাত্র ডেলিভারি চার্জ দিয়ে  অর্ডার কনফার্ম করুন"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="ফোন দিয়েও অর্ডার কনফার্ম করতে পারেন:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="41dp"
+                android:text="বিকাশ পার্সোনাল:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/pymnt_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:text="012345324565"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+
+
+                />
+
+
+
+            <ImageView
+                android:id="@+id/number_copy3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dial_icon_01"
+                android:padding="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="প্রোডাক্টের নাম লিখুন:"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/prudct_code1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="প্রোডাক্ট একাধিক হলে কমা দিয়ে লিখুন"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Name (নাম):"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/cstmr_name1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="আপনার নাম লিখুন"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Phone (ফোন নাম্বার):"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/c_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="017********"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Adress (ঠিকানা):"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/adress1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="আপনার সঠিক ঠিকানা উল্লেখ করুন"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Trnx id (ট্রানজেকশন আইডি):"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/trnx_id1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="পেমেন্ট এর পর ট্রানজেকশন আইডি দিন"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/cancel_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/thankYou_title"
+            android:text="cancel"
+            android:textColor="@color/white" />
+
+
+
+
+        <Button
+            android:id="@+id/confirm_button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/thankYou_title"
+            android:text="Order Confirmed"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
